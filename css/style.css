@@ -1,0 +1,84 @@
+body {
+	font-family: Futura, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	margin: 0px;
+	position: fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	overflow:hidden;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+    padding: 2px 8px;
+	background: darkgray;
+	flex-shrink: 0;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+aside {
+	display: flex;
+	flex-direction: column;
+	padding: 2px 8px;
+	background: darkgray;
+}
+
+main {
+	position: relative;
+	overflow: hidden;
+	flex-grow: 1;
+	display: flex;
+}
+
+footer {
+	height: 100px;
+	padding: 2px 8px;
+	background: darkgray;
+	flex-shrink: 0;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+#sound {
+	flex-grow: 1;
+}
+
+#db {
+	flex-grow: 1;
+}
+
+#info {
+	position: absolute;
+	bottom: 0;
+	right: 100px;
+	text-align: right;
+}
+
+#buttons {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+}
+
+.number {
+	width: 4em;
+}
+
+.disabled {
+	display: none;
+}
+
+.hidden {
+	display: none;
+}

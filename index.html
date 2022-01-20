@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel='stylesheet' type='text/css' href='css/style.css' />
+	<script type="text/javascript" src="js/sound.js"></script>
+</head>
+<body>
+
+<header>
+header
+</header>
+
+<main>
+
+<aside>
+<button id="analyse">Analyse Sound Field</button>
+<div>
+<label for="autoAnalyse">Auto Analyse</label>
+<input id="autoAnalyse" name="autoAnalyse" type="checkbox" />
+</div>
+<label for="frequency">Frequency</label>
+<input id="frequency" value="80" name="frequency" type="number" class="number" />
+<label for="crossover">Crossover</label>
+<input id="crossover" value="120" name="crossover" type="number" class="number" />
+</aside>
+
+<canvas id="sound"></canvas>
+<div id="info"></div>
+
+<aside>
+<input id="highLevel" value="100" name="highLevel" type="number" class="number" />
+<canvas id="db" width=50></canvas>
+<input id="lowLevel" value="40" name="lowLevel" type="number" class="number" />
+</aside>
+
+</main>
+<footer>
+<div id="buttons">
+	<button id="addSpeaker">Add Speaker</button>
+	<button id="removeSpeaker" disabled=true>Remove Speaker</button>
+</div>
+<div id="building">
+	<label for="buildingWidth">Width: </label>
+	<input id="buildingWidth" name="buildingWidth" type="number" class="number" />
+	<label for="buildingDepth">Depth: </label>
+	<input id="buildingDepth" name="buildingDepth" type="number" class="number" />
+	<br>
+	<label for="stageWidth">Stage Width: </label>
+	<input id="stageWidth" name="stageWidth" type="number" class="number" />
+	<label for="stageDepth">Stage Depth: </label>
+	<input id="stageDepth" name="stageDepth" type="number" class="number" />
+	<label for="stageOffset">Stage Depth Offset: </label>
+	<input id="stageOffset" name="stageOffset" type="number" class="number" />
+</div>
+<div id="speakerInfo" class="disabled">
+	<label for="speakerName">Name: </label>
+	<input id="speakerName" name="speakerName" />
+	<label for="speakerType">Type: </label>
+	<input id="speakerType" name="speakerType" />
+	<br>
+	<label for="speakerX">Location X: </label>
+	<input id="speakerX" name="speakerX" type="number" class="number" />
+	<label for="speakerY">Location Y: </label>
+	<input id="speakerY" name="speakerY" type="number" class="number" />
+	<label for="speakerWidth">Width: </label>
+	<input id="speakerWidth" name="speakerWidth" type="number" class="number" />
+	<label for="speakerDepth">Depth: </label>
+	<input id="speakerDepth" name="speakerDepth" type="number" class="number" />
+	<label for="speakerRotation">Rotation: </label>
+	<input id="speakerRotation" name="speakerRotation" type="number" class="number" />
+	<br>
+	<label for="speakerSWL">SWL: </label>
+	<input id="speakerSWL" name="speakerSWL" type="number" class="number" />
+	<label for="speakerDelay">Delay: </label>
+	<input id="speakerDelay" name="speakerDelay" type="number" class="number" />
+	<br>
+</div>
+
+</footer>
+
+</body>
+</html>
